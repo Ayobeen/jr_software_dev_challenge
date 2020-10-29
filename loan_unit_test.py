@@ -1,5 +1,5 @@
 import unittest
-from main2 import get_days_of_power
+from loan import get_days_of_power
 
 class TestTotalDays(unittest.TestCase):
 
