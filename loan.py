@@ -1,10 +1,12 @@
 
 def get_days_of_power(R1, D1, R2, D2, R3, D3, K):
+    # create loans object
     loans = [(R1, D1), (R2, D2), (R3, D3)]
 
+    # sort them according to the day
     loans.sort(key = lambda x: x[1])
 
-    # Initialize total amount, current_rate and final value (days of power)
+    # Initialize amount, current_rate and final value (days of power)
     current_amount = K # money
 
     current_rate = 0
